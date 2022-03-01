@@ -59,7 +59,13 @@ FrameContext* WaitForNextFrameResources();
 LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 // Main code
-int main(int, char**)
+//int main(int, char**) // Replace regular C++ entry point with Windows entry point to remove extra command window.
+int WinMain(
+    HINSTANCE hInstance,
+    HINSTANCE hPrevInstance,
+    LPSTR lpCmdLine,
+    int nShowCmd
+)
 {
     // Create application window
     //ImGui_ImplWin32_EnableDpiAwareness();
