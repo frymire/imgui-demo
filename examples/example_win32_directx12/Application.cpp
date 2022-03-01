@@ -5,7 +5,7 @@ namespace MyApp {
 
     void RenderUI() {
         ImGui::Begin("Settings");
-        ImGui::Button("Hello");
+        ImGui::Button("Hi");
         static float value = 0.0f;
         ImGui::DragFloat("Value", &value);
         ImGui::End();
